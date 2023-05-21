@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
   selector: 'injectable-test-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  imports: [RouterOutlet],
 })
-export class AppComponent {
-  title = 'injectable-test';
-}
+export class AppComponent {}
